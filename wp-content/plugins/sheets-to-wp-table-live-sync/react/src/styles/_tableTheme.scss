@@ -1,0 +1,194 @@
+/******************************************************
+        All the backend Theme css will place here...
+******************************************************/
+
+.table-customization-theme-wrapper {
+    padding-bottom: 50px;
+
+    h4 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: #666873;
+        margin: 20px 0 15px 0;
+        display: flex;
+        align-items: center;
+
+        svg {
+            margin-left: 5px;
+        }
+    }
+
+    .react-tooltip {
+        z-index: 10;
+    }
+
+    .switch-toggle {
+        margin-top: 15px;
+        margin-bottom: 30px;
+
+        label {
+            line-height: normal;
+        }
+    }
+
+    .table-customization-theme-btns {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
+
+        .item-wrapper {
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 116px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            button {
+                display: inline-block;
+                background: #ffffff;
+                border: 1px solid white;
+                border-radius: 4px;
+                cursor: pointer;
+                outline: none;
+                box-shadow: none;
+                width: 100%;
+                height: 116px;
+                padding: 0;
+                overflow: hidden;
+                transition: all 0.3s ease;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition: all 0.3s ease;
+                }
+
+                .badge {
+                    top: 10px;
+                    right: 10px;
+                    margin-top: 0;
+                    color: #ffffff;
+                    font-size: 11px;
+                    font-weight: 600;
+                    line-height: 100%;
+                    border-radius: 5px;
+                    font-style: normal;
+                    position: absolute;
+                    white-space: nowrap;
+                    padding: 2px 4px 3px;
+                    background-color: #434BFD;
+                }
+
+                &.active {
+                    position: relative;
+                    border: 2px solid #34a0fa !important;
+                    // sam 
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 7px;
+                        top: 3px;
+                        width: 3px;
+                        height: 7px;
+                        border-left: 2px solid white;
+                        border-bottom: 2px solid white;
+                        font-family: arial;
+                        transform: scaleX(-1) rotate(-45deg);
+                        z-index: 1;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: -26px;
+                        top: -30px;
+                        width: 50px;
+                        height: 50px;
+                        background: #34a0fa;
+                        transform: rotate(47deg);
+                        z-index: 0;
+                    }
+
+                    &:hover {
+                        box-shadow: rgb(52, 160, 250, 0.3) 0px 0px 0px 5px;
+                    }
+                }
+
+                &:hover {
+                    box-shadow: rgb(240, 242, 248) 0px 0px 0px 5px;
+
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+
+                &:focus,
+                &:active {
+                    outline: none;
+                    border: 1px solid white;
+                    // box-shadow: rgb(240, 242, 248) 0px 0px 0px 5px;
+                    box-shadow: none;
+                }
+            }
+
+            span {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 19px;
+                text-align: center;
+                color: #1e1e1e;
+                margin-top: 12px;
+
+                &.pro-tag-unlock {
+                    background: #34A0FA;
+                    border-radius: 11.5px;
+                    color: #ffffff !important;
+                    width: 54px;
+                    height: 19px;
+                    font-size: 11px !important;
+                }
+
+                /* &.theme-new-tag {
+                    background: #2bb885;
+                    border-radius: 11.5px;
+                    color: white;
+                    width: 54px;
+                    height: 19px;
+                    font-size: 11px !important;
+                    text-align: center;
+                    align-items: center;
+
+                } */
+
+                &.badge-pro-lock {
+                    width: 54px;
+                    height: 19px;
+                    margin-top: 5px;
+                    border-radius: 11.5px;
+                    color: #34A0FA !important;
+                    background-color: #ffffff !important;
+                    font-size: 11px !important;
+                }
+            }
+
+            span.pro-tag-unlock.theme-new-tags {
+                background: #2bb885;
+                color: white;
+            }
+        }
+    }
+
+    .table-customization-theme-btns.active_sheetstyle {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+}
